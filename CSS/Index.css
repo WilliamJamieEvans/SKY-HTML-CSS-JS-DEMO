@@ -1,0 +1,37 @@
+body{
+    background-color:aquamarine; 
+
+}
+
+p{
+color:blue;
+}
+
+h1,h2,h3{
+    background-color: brown;
+    color: darkblue;
+}
+
+.TestforClass{
+color:black;
+font: italic;
+font-family: 'Times New Roman', Times, serif;
+background-color: darkgrey;
+}
+
+#TestforID{
+    background-color: darkgreen;
+    color: darkgrey;
+}
+
+p.text
+{
+    color: blue;
+}
+
+p.text1 {
+    color:aliceblue
+}
+
+
+/* Comment like this in css  */

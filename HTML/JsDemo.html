@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+
+    <!-- Added javascript -->
+    <script>
+        function myFunction(){
+            document.getElementById("newFunc").innerHTML = "in head button - This is some better text";
+        }
+
+    </script>
+    <!-- finished javascript in head for button-->
+
+</head>
+<body>
+    
+
+<h2> What can JavaScript do?</h2>
+
+<!--JavaScript in an Attribute -->
+<p id="hello">JavaScript can change the contect on the page</p>
+
+<!-- 1 way of doing it - Make a button using Javascript IN LINE-->
+<button type="button" 
+onclick="document.getElementById('hello').innerHTML = 'Hello everyone, this is made with javascript!'">
+Click me for something cool!
+</button>
+
+<!-- 1 way of doing it - Another button IN LINE-->
+<button type="button" 
+onclick="document.getElementById('hello').innerHTML = 'JavaScript can change the contect on the page'">
+Click me to go back to the original!
+</button>
+
+<!-- 2 ways of doing it - A DIFFERENT BUTTON new stuff for javascript in the <head> -->
+<p id="newFunc"> in head button - this is text</p>
+<button type="button" onclick="myFunction()">see what this button does</button>
+
+
+<!-- 3 way of doing it - From JsDemo.js external page -->
+
+<p id="football">Arsenal is first place </p>
+<button type="button" onclick="myNEWFunction()"> See what happens </button>
+
+<!-- 3 way of doing it - This <script> HAS to be in <head> or at the end of the <body>-->
+<script src="/JAVASCRIPT/JsDemo.js"></script>
+
+</body>
+</html>
